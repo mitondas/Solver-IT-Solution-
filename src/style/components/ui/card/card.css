@@ -1,0 +1,170 @@
+@charset "UTF-8";
+div.card-border-success {
+  background: linear-gradient(35deg, var(--card-border-black) 60%, var(--success) 100%);
+  border-radius: 5px;
+}
+
+div.card-border-danger {
+  background: linear-gradient(35deg, var(--card-border-black) 60%, var(--danger) 100%);
+  border-radius: 5px;
+}
+
+div.card-border-warning {
+  background: linear-gradient(35deg, var(--card-border-black) 60%, var(--warning) 100%);
+  border-radius: 5px;
+}
+
+div.card-border-default {
+  background: linear-gradient(35deg, var(--card-border-black) 60%, var(--card-border-default) 100%);
+  border-radius: 5px;
+}
+
+div.card-border-blue {
+  background: linear-gradient(35deg, var(--card-border-black) 60%, var(--card-border-blue) 100%);
+  border-radius: 5px;
+}
+
+div.card-success {
+  background: linear-gradient(35deg, var(--card-content-black) 60%, var(--success) 100%);
+}
+
+div.card-danger {
+  background: linear-gradient(35deg, var(--card-content-black) 60%, var(--danger) 100%);
+}
+
+div.card-warning {
+  background: linear-gradient(35deg, var(--card-content-black) 60%, var(--warning) 100%);
+}
+
+div.card-default {
+  background: linear-gradient(35deg, var(--card-content-black) 60%, var(--card-border-default) 100%);
+}
+
+div.card-blue {
+  background: linear-gradient(35deg, var(--card-content-black) 60%, var(--blue) 100%);
+}
+
+div.card {
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  color: var(--colorText);
+  background-clip: padding-box;
+  /* !importanté */
+  border: solid 2px transparent;
+  /* !importanté */
+  border-radius: 5px;
+}
+
+div.card .card-header > div {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+div.card .card-header {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.card .card-header .pointer {
+  cursor: pointer;
+}
+
+div.card .card-header .card-menu {
+  position: relative;
+  display: inline-block;
+}
+
+div.card .card-header .card-menu .dropdown-content {
+  position: absolute;
+  right: 10px;
+  display: none;
+  background: rgba(255, 255, 255, 0.603);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid #ebebeb71;
+  border-top-right-radius: 0;
+  min-width: 160px;
+  overflow: auto;
+  z-index: 1;
+}
+
+div.card .card-header .card-menu .dropdown-content div {
+  width: 100%;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  place-items: center;
+}
+
+div.card .card-header .card-menu .dropdown-content div:hover {
+  background-color: rgba(221, 221, 221, 0.877);
+}
+
+div.card .card-header .card-menu .dropdown-content div img, div.card .card-header .card-menu .dropdown-content div svg {
+  width: 20px;
+}
+
+div.card .card-header .card-menu .show {
+  display: block;
+}
+
+div.card .card-body {
+  font-size: 0.9rem;
+  font-weight: 400;
+  overflow: hidden;
+}
+
+div.card .card-body input {
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  color: var(--black-color);
+}
+
+div.card .card-body input:focus {
+  outline: none;
+  outline: 2px solid var(--main-color);
+  -moz-outline-radius: 5px;
+}
+
+div.card .card-body input:disabled {
+  background: transparent;
+  color: var(--colorText);
+}
+
+div.card .card-body label {
+  font-weight: bold;
+}
+
+div.card .card-body .avatar {
+  font-size: 10rem;
+  margin: 1rem 0;
+}
+
+div.card .active-user, div.card .banned-user {
+  font-size: 5rem;
+  margin: 0;
+}
+/*# sourceMappingURL=card.css.map */

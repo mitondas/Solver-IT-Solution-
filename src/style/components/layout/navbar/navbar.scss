@@ -1,0 +1,58 @@
+.navbar {
+    
+    nav{
+        height: 100%;
+    }
+    ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        list-style: none;
+
+        height: 100%;
+        width: 100%;    
+
+        li a{
+            display: flex;
+            flex-direction: row;
+
+            place-items: center;
+
+            padding: 10px;
+            margin-right: 15px;
+            
+            border-radius: 50%;
+            background-color: var(--bgColorMain);
+
+            i.logout{
+                font-size: 1.5rem;
+                transition: var(--duration) ease-in-out;
+                &:hover{
+                    color: var(--danger)
+                }
+            }
+            
+            i.notifications{
+                font-size: 1rem;
+                transition: var(--duration) ease-in-out;
+                @keyframes move {
+                    0%, 100%, 50%{
+                        transform: rotateZ(0deg);
+                    }
+                    25%{
+                        transform: rotateZ(15deg);
+                    }
+                    75%{
+                        transform: rotateZ(-15deg);
+                    }
+                }
+                &:hover{
+                    animation: move var(--duration-notifications);
+                    color: var(--notifications);
+                }
+                
+            }
+        }
+    }
+}
